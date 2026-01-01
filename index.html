@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật Thúy 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Màn hình 1 -->
+    <div class="screen active" id="screen1">
+        <div class="content">
+            <div class="emoji-large">🎂</div>
+            <h1 class="title">Chúc Mừng Sinh Nhật</h1>
+            <div class="name">THÚY</div>
+            <div class="date">01/01/2026</div>
+            <p class="hint">Nhấn vào màn hình để tiếp tục ✨</p>
+        </div>
+    </div>
+
+    <!-- Màn hình 2 -->
+    <div class="screen" id="screen2">
+        <div class="content">
+            <div class="emoji-large">🎉</div>
+            <h2 class="wish-text">Chúc cậu luôn tươi trẻ, xinh đẹp<br>và hạnh phúc như hôm nay!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 3 -->
+    <div class="screen" id="screen3">
+        <div class="content">
+            <div class="emoji-large">🌟</div>
+            <h2 class="wish-text">Mong cậu thành công rực rở<br>trong mọi lĩnh vực!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 4 -->
+    <div class="screen" id="screen4">
+        <div class="content">
+            <div class="emoji-large">💖</div>
+            <h2 class="wish-text">Cầu mong mọi ước mơ của cậu<br>đều thành hiện thực!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 5 -->
+    <div class="screen" id="screen5">
+        <div class="content">
+            <div class="emoji-large">🎈</div>
+            <h2 class="wish-text">Chúc cậu có một năm tuổi mới<br>tràn đầy sức khỏe và năng lượng!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 6 -->
+    <div class="screen" id="screen6">
+        <div class="content">
+            <div class="emoji-large">✨</div>
+            <h2 class="wish-text">Mong cậu gặp nhiều may mắn<br>và thuận lợi!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 7 -->
+    <div class="screen" id="screen7">
+        <div class="content">
+            <div class="emoji-large">⭐</div>
+            <h2 class="wish-text">Chúc cậu luôn tỏa sáng<br>như ngôi sao!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 8 -->
+    <div class="screen" id="screen8">
+        <div class="content">
+            <div class="emoji-large">🌈</div>
+            <h2 class="wish-text">Mong cậu có thật nhiều<br>kỷ niệm đẹp trong năm mới!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 9 -->
+    <div class="screen" id="screen9">
+        <div class="content">
+            <div class="emoji-large">👑</div>
+            <h2 class="wish-text">Chúc cậu ngày càng xinh đẹp<br>và quyến rũ!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 10 -->
+    <div class="screen" id="screen10">
+        <div class="content">
+            <div class="emoji-large">😊</div>
+            <h2 class="wish-text">Cầu chúc hạnh phúc<br>luôn mỉm cười với cậu!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 11 -->
+    <div class="screen" id="screen11">
+        <div class="content">
+            <div class="emoji-large">🎯</div>
+            <h2 class="wish-text">Chúc cậu đạt được tất cả<br>mục tiêu đã đề ra!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 12 -->
+    <div class="screen" id="screen12">
+        <div class="content">
+            <div class="emoji-large">💝</div>
+            <h2 class="wish-text">Mong cậu luôn được bao quanh<br>bởi tình yêu thương!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 13 -->
+    <div class="screen" id="screen13">
+        <div class="content">
+            <div class="emoji-large">🎁</div>
+            <h2 class="wish-text">Chúc cậu có một tuổi mới<br>thật tuyệt vời!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình 14 -->
+    <div class="screen" id="screen14">
+        <div class="content">
+            <div class="emoji-large">🌸</div>
+            <h2 class="wish-text">Cảm ơn cậu đã là<br>một người bạn tuyệt vời!</h2>
+        </div>
+    </div>
+
+    <!-- Màn hình cuối -->
+    <div class="screen" id="screen15">
+        <div class="content">
+            <div class="emoji-large">🎊</div>
+            <h2 class="wish-text final">Happy Birthday!</h2>
+            <div class="credits">Credits: NA and AQ ✨</div>
+        </div>
+    </div>
+
+    <div class="confetti-container" id="confetti"></div>
+
+    <script>
+        let currentScreen = 1;
+        const totalScreens = 15;
+        const backgrounds = [
+            'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+            'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+            'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
+            'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+            'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
+            'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+            'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)',
+            'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+            'linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%)',
+            'linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)',
+            'linear-gradient(135deg, #f77062 0%, #fe5196 100%)',
+            'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)',
+            'linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%)',
+            'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)'
+        ];
+
+        document.body.style.background = backgrounds[0];
+
+        function nextScreen() {
+            if (currentScreen < totalScreens) {
+                document.getElementById('screen' + currentScreen).classList.remove('active');
+                currentScreen++;
+                document.getElementById('screen' + currentScreen).classList.add('active');
+                document.body.style.background = backgrounds[currentScreen - 1];
+                createConfetti();
+            }
+        }
+
+        function createConfetti() {
+            const container = document.getElementById('confetti');
+            const colors = ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#ffd700', '#ff69b4', '#00f2fe', '#43e97b'];
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = Math.random() * 0.5 + 's';
+                confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                container.appendChild(confetti);
+                
+                setTimeout(() => confetti.remove(), 4000);
+            }
+        }
+
+        document.body.addEventListener('click', nextScreen);
+        document.body.addEventListener('touchstart', nextScreen);
+    </script>
+</body>
+</html>
